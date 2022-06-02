@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{site_name}}</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <style>
+    .grid {
+      margin-top: 10px
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- As a link -->
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color:white;" href="/">{{site_name}}</a>
+    </div>
+  </nav>
+
+
+  </nav>
+  <form action="/analyze" method="get">
+    <div class="mb-3" style="margin:10px;">
+      <label for="exampleFormControlTextarea1" class="form-label">Enter Your Text Here</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="18" name="all_text"></textarea>
+      <div class="grid">
+        <div>
+          <input name="check1" type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" style="padding-left:10px;padding-right:50px;" for="exampleCheck1">Remove
+            Punctuation</label>
+        </div>
+
+        <div>
+          <input name="check2" type="checkbox" class="form-check-input" id="exampleCheck2">
+          <label class="form-check-label" style="padding-left:10px;padding-right:50px;"
+            for="exampleCheck2">Capitalize</label>
+        </div>
+
+        <div>
+          <input name="check3" type="checkbox" class="form-check-input" id="exampleCheck3">
+          <label class="form-check-label" style="padding-left:10px;padding-right:50px;"
+            for="exampleCheck3">Count</label>
+        </div>
+
+        <div>
+          <input name="check4" type="checkbox" class="form-check-input" id="exampleCheck4">
+          <label class="form-check-label" style="padding-left:10px;padding-right:50px;" for="exampleCheck4">Remove extra
+            space</label>
+        </div>
+
+        <div>
+          <input name="check5" type="checkbox" class="form-check-input" id="exampleCheck5">
+          <label class="form-check-label" style="padding-left:10px;padding-right:50px;" for="exampleCheck5">Capitalize
+            Heading</label>
+        </div>
+
+      </div>
+
+
+
+      <button type="submit" class="btn btn-outline-primary" style="margin-top:10px;">Analyze</button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
